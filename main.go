@@ -3,5 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello First Golang Wish Me Luck")
+	sayHello("mario") // methods on file greetings
+	for _, v := range points {
+		fmt.Printf("list of points %v \n", v)
+	}
 }
