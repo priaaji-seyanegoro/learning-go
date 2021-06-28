@@ -2,6 +2,16 @@ package main
 
 import "fmt"
 
+//recursive func for count factorial
+func factorialRecursive(value int) int {
+	if value == 1 {
+		return 1
+	} else {
+		return value * factorialRecursive(value-1)
+	}
+
+}
+
 func main() {
-	fmt.Println("Hello First Golang Wish Me Luck")
+	fmt.Println(factorialRecursive(10))
 }
